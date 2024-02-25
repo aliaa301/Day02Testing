@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using WeightCalculator;
 
 namespace WeightCalculatorTest
 {
@@ -9,6 +10,11 @@ namespace WeightCalculatorTest
         [TestMethod]
         public void TestMethod1()
         {
+            WeightCalculation weightCalculationForFemale = new WeightCalculation
+            {
+                Height = 162,
+                Gender = 'f'
+            };
         }
     }
 }
